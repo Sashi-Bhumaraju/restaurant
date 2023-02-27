@@ -20,7 +20,7 @@ class UserAuth extends Component {
   
    getFetchUsers = async () => {
     let usersList = [];
-    await  fetch("http://localhost:3001/users").then(res => res.json()).then(result => usersList = result ).catch(console.log);
+    await  fetch("https://restaurant-backend-server.onrender.com/users").then(res => res.json()).then(result => usersList = result ).catch(console.log);
     console.log(usersList)
     let loginSucces = false;
     usersList.map((user)=>{
@@ -44,7 +44,7 @@ class UserAuth extends Component {
     u.name = this.state.name;
     u.password = this.state.pass;
 
-    fetch("http://localhost:3001/users", {
+    fetch("https://restaurant-backend-server.onrender.com/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

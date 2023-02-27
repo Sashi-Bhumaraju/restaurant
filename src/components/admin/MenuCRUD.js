@@ -20,7 +20,7 @@ class MenuCRUD extends React.Component {
 
     getFetchMenu = async () => {
         let mList = [];
-        await  fetch("http://localhost:3001/menu").then(res => res.json()).then(result => mList = result ).catch(console.log);
+        await  fetch("https://restaurant-backend-server.onrender.com/menu").then(res => res.json()).then(result => mList = result ).catch(console.log);
         console.log(mList)
       
         for(let i = 0 ; i < mList.length; i++) {
@@ -45,7 +45,7 @@ class MenuCRUD extends React.Component {
 
     save = async () => {
         let uData = null;
-        await  fetch("http://localhost:3001/users/"+ UserData.id ).then(res => res.json()).then(result => uData = result ).catch(console.log);
+        await  fetch("https://restaurant-backend-server.onrender.com/users/"+ UserData.id ).then(res => res.json()).then(result => uData = result ).catch(console.log);
         console.log(uData.orders)
         for(let i = 0; i < this.state.menuList.length; i++) {
             if( this.state.count[i] !== 0 ) {
@@ -60,7 +60,7 @@ class MenuCRUD extends React.Component {
             }
         }
 
-        fetch("http://localhost:3001/users/"+ UserData.id, {
+        fetch("https://restaurant-backend-server.onrender.com/users/"+ UserData.id, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json"
@@ -82,7 +82,7 @@ class MenuCRUD extends React.Component {
     }
 
     delete = async (id) => {
-      await  fetch("http://localhost:3001/menu/"+id, {
+      await  fetch("https://restaurant-backend-server.onrender.com/menu/"+id, {
             method: "DELETE",
             headers: {
               "Content-Type": "application/json"
@@ -101,7 +101,7 @@ class MenuCRUD extends React.Component {
             "name":this.state.name,
             "price":this.state.price,
         }
-      await  fetch("http://localhost:3001/menu/" + id, {
+      await  fetch("https://restaurant-backend-server.onrender.com/menu/" + id, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
@@ -160,7 +160,7 @@ class MenuCRUD extends React.Component {
             "price":this.state.price,
         }
     
-      await  fetch("http://localhost:3001/menu", {
+      await  fetch("https://restaurant-backend-server.onrender.com/menu", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

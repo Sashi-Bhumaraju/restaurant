@@ -15,7 +15,7 @@ class Menu extends React.Component {
 
     getFetchMenu = async () => {
         let mList = [];
-        await  fetch("http://localhost:3001/menu").then(res => res.json()).then(result => mList = result ).catch(console.log);
+        await  fetch("https://restaurant-backend-server.onrender.com/menu").then(res => res.json()).then(result => mList = result ).catch(console.log);
         console.log(mList)
       
         for(let i = 0 ; i < mList.length; i++) {
@@ -50,7 +50,7 @@ class Menu extends React.Component {
 
     placeOrder = async () => {
         let uData = null;
-        await  fetch("http://localhost:3001/users/"+ UserData.id ).then(res => res.json()).then(result => uData = result ).catch(console.log);
+        await  fetch("https://restaurant-backend-server.onrender.com/users/"+ UserData.id ).then(res => res.json()).then(result => uData = result ).catch(console.log);
         console.log(uData.orders)
         for(let i = 0; i < this.state.menuList.length; i++) {
             if( this.state.count[i] !== 0 ) {
@@ -66,7 +66,7 @@ class Menu extends React.Component {
             }
         }
 
-        fetch("http://localhost:3001/users/"+ UserData.id, {
+        fetch("https://restaurant-backend-server.onrender.com/users/"+ UserData.id, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json"

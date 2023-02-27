@@ -14,7 +14,7 @@ class Cart extends React.Component {
 
     getFetchMenu = async () => {
         let uData = null;
-        await  fetch("http://localhost:3001/users/"+UserData.id).then(res => res.json()).then(result => uData = result ).catch(console.log);
+        await  fetch("https://restaurant-backend-server.onrender.com/users/"+UserData.id).then(res => res.json()).then(result => uData = result ).catch(console.log);
         console.log(uData.orders)
         let bill = this.state.totalBill ;
         for(let i = 0; i < uData.orders.length; i++ ) {

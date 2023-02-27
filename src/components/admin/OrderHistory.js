@@ -17,7 +17,7 @@ class OrderHistory extends React.Component {
 
     getFetchMenu = async () => {
         let uData = null;
-        await  fetch("http://localhost:3001/users").then(res => res.json()).then(result => uData = result ).catch(console.log);
+        await  fetch("https://restaurant-backend-server.onrender.com/users").then(res => res.json()).then(result => uData = result ).catch(console.log);
         let orders  = []
        let bill =0
         for(let i = 0; i < uData.length; i++ ) {

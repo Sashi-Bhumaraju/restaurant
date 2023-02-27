@@ -20,7 +20,7 @@ class usersCRUD extends React.Component {
 
     getFetchusers = async () => {
         let mList = [];
-        await  fetch("http://localhost:3001/users").then(res => res.json()).then(result => mList = result ).catch(console.log);
+        await  fetch("https://restaurant-backend-server.onrender.com/users").then(res => res.json()).then(result => mList = result ).catch(console.log);
         console.log(mList)
       
         for(let i = 0 ; i < mList.length; i++) {
@@ -45,7 +45,7 @@ class usersCRUD extends React.Component {
 
     save = async () => {
         let uData = null;
-        await  fetch("http://localhost:3001/users/"+ UserData.id ).then(res => res.json()).then(result => uData = result ).catch(console.log);
+        await  fetch("https://restaurant-backend-server.onrender.com/users/"+ UserData.id ).then(res => res.json()).then(result => uData = result ).catch(console.log);
         console.log(uData.orders)
         for(let i = 0; i < this.state.usersList.length; i++) {
             if( this.state.count[i] !== 0 ) {
@@ -60,7 +60,7 @@ class usersCRUD extends React.Component {
             }
         }
 
-        fetch("http://localhost:3001/users/"+ UserData.id, {
+        fetch("https://restaurant-backend-server.onrender.com/users/"+ UserData.id, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json"
@@ -82,7 +82,7 @@ class usersCRUD extends React.Component {
     }
 
     delete = async (id) => {
-      await  fetch("http://localhost:3001/users/"+id, {
+      await  fetch("https://restaurant-backend-server.onrender.com/users/"+id, {
             method: "DELETE",
             headers: {
               "Content-Type": "application/json"
@@ -101,7 +101,7 @@ class usersCRUD extends React.Component {
             "name":this.state.name,
             "password":this.state.password,
         }
-      await  fetch("http://localhost:3001/users/" + id, {
+      await  fetch("https://restaurant-backend-server.onrender.com/users/" + id, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
@@ -161,7 +161,7 @@ class usersCRUD extends React.Component {
             "orders" :[]
         }
     
-      await  fetch("http://localhost:3001/users", {
+      await  fetch("https://restaurant-backend-server.onrender.com/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
