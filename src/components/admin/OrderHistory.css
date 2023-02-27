@@ -1,0 +1,68 @@
+.BillsButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+
+.Today {
+    width: 100px;
+    /* background-color:green; */
+    color: rgb(0, 0, 0);
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 10px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Month {
+    width: 100px;
+    background-color:tomato;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.Total {
+    width: 100px;
+    /* background-color:slateblue; */
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Date {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 50px;
+    color:#000000;
+    background-color: aqua;
+    padding: 0px 10px;
+}

@@ -1,0 +1,38 @@
+.Edit {
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    color: blueviolet;
+    cursor: pointer;
+}
+.Delete {
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.EditForm {
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    width: max-content;
+    flex-direction: row;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2px;
+}
+.EditFormSubmit {
+    background-color: tomato;
+    border: none;
+    width: 80px;
+    color: white;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}

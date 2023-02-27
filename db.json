@@ -1,0 +1,180 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "1234",
+      "password": "1234",
+      "isAdmin": true,
+      "orders": []
+    },
+    {
+      "id": 3,
+      "name": "sasi",
+      "password": "1234",
+      "isAdmin": false,
+      "orders": [
+        {
+          "name": "ginger",
+          "price": 500,
+          "date": "2023-02-26T11:03:43.732Z"
+        },
+        {
+          "name": "Figs",
+          "price": 7504,
+          "date": "2023-02-18T12:35:24.050Z"
+        },
+        {
+          "name": "Honey",
+          "price": 34674,
+          "date": "2023-02-10T12:35:24.050Z"
+        },
+        {
+          "name": "Wine",
+          "price": 1754,
+          "date": "2023-01-28T12:35:24.050Z"
+        },
+        {
+          "name": "ginger",
+          "price": 100,
+          "date": "2022-09-26T12:35:24.050Z"
+        },
+        {
+          "name": "Figs",
+          "price": 15008,
+          "date": "2022-08-26T12:35:30.725Z"
+        },
+        {
+          "name": "Honey",
+          "price": 69348,
+          "date": "2022-07-26T12:35:30.725Z"
+        },
+        {
+          "name": "Wine",
+          "price": 3508,
+          "date": "2022-06-26T12:35:30.725Z"
+        },
+        {
+          "name": "ginger",
+          "price": 200,
+          "date": "2022-05-26T12:35:30.725Z"
+        },
+        {
+          "name": "Figs",
+          "price": 7504,
+          "date": "2023-02-27T08:04:45.666Z"
+        },
+        {
+          "name": "Figs",
+          "price": 7504,
+          "date": "2023-02-27T08:06:04.347Z"
+        },
+        {
+          "name": "Wine",
+          "price": 1754,
+          "date": "2023-02-27T08:06:12.729Z"
+        },
+        {
+          "name": "ginger",
+          "price": 100,
+          "date": "2023-02-27T08:06:12.729Z"
+        },
+        {
+          "name": "Figs",
+          "price": 7504,
+          "date": "2023-02-27T08:06:24.851Z"
+        },
+        {
+          "name": "Honey",
+          "price": 34674,
+          "date": "2023-02-27T08:06:24.851Z"
+        },
+        {
+          "name": "Wine",
+          "price": 1754,
+          "date": "2023-02-27T08:06:24.851Z"
+        },
+        {
+          "name": "ginger",
+          "price": 100,
+          "date": "2023-02-27T08:06:24.851Z"
+        },
+        {
+          "name": "Figs",
+          "price": 7504,
+          "date": "2023-02-27T08:07:08.959Z"
+        },
+        {
+          "name": "Honey",
+          "price": 34674,
+          "date": "2023-02-27T08:07:08.959Z"
+        },
+        {
+          "name": "Wine",
+          "price": 1754,
+          "date": "2023-02-27T08:07:08.959Z"
+        },
+        {
+          "name": "ginger",
+          "price": 100,
+          "date": "2023-02-27T08:07:08.959Z"
+        },
+        {
+          "name": "Figs",
+          "price": 7504,
+          "date": "2023-02-27T08:07:43.674Z"
+        },
+        {
+          "name": "Honey",
+          "price": 34674,
+          "date": "2023-02-27T08:07:43.674Z"
+        },
+        {
+          "name": "Wine",
+          "price": 1754,
+          "date": "2023-02-27T08:07:43.674Z"
+        },
+        {
+          "name": "Figs",
+          "price": 7504,
+          "date": "2023-02-27T08:45:00.005Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Your Love",
+      "password": "12345678",
+      "isAdmin": false,
+      "orders": []
+    },
+    {
+      "id": 5,
+      "name": "Your Love",
+      "password": "1234dasdas",
+      "isAdmin": true,
+      "orders": []
+    }
+  ],
+  "menu": [
+    {
+      "id": 3,
+      "name": "Figs",
+      "price": "7504"
+    },
+    {
+      "id": 5,
+      "name": "Honey",
+      "price": "34674"
+    },
+    {
+      "id": 6,
+      "name": "Wine",
+      "price": "1754"
+    },
+    {
+      "id": 7,
+      "name": "ginger",
+      "price": "100"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+.Menu  {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 19px;
+  margin-bottom: 100px;
+
+}
+
+.MenuCard {
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2px;
+}
+
+.MenuId {
+    width: 100px;
+    /* background-color: red; */
+    margin: 5px;
+    font-weight: bold;
+    color: black;
+}
+.MenuName {
+    font-weight: bold;
+    width: 300px;
+    color: black;
+}
+.ItemCost {
+    font-weight: bold;
+    width: 300px;
+    color:rgb(0, 40, 40);
+}
+
+.AddToCart{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+ .AddToCart:hover {
+    background-color: #005fa3;
+  }
+
+  .Add {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-around;
+    margin: 5px;
+  }
+
+  .remove {
+     width: 30px;
+     height: 30px;
+     background-color: #005fa3;
+     border-radius: 50%;
+     /* display: flex; */
+     text-align: center;
+     cursor: pointer;
+     color: #fff;
+  }
+
+  .add {
+    width: 30px;
+    height: 30px;
+    background-color: #005fa3;
+    border-radius: 50%;
+    /* display: flex; */
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+ }
+.count {
+   font-weight: bold;
+}
+
+.CurrentBill {
+    width: 100px;
+    color: green;
+}
+
+.PlaceOrder {
+    height: 70px;
+    width: 920px;
+    background-color: rgb(255, 255, 255);
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2px;
+    font-weight: bold;
+}
+.PlaceOrderHeading {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 20px;
+    cursor:pointer;
+    
+}
+.TotalBillHeading {
+    margin: 30px;
+    color: black;
+}

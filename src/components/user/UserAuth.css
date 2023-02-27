@@ -1,0 +1,61 @@
+.UserAuth {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    width: 100%;
+    
+    /* background-color: red; */
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    padding: 10px;
+    border-radius: 20px;
+   font-family:Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: center;
+    margin: 0rem auto;
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+  
+  label {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+
+  .UsertSubmit{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+ .UsertSubmit:hover {
+    background-color: #005fa3;
+  }

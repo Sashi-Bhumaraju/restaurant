@@ -1,0 +1,14 @@
+.AdminSubmit{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+ .AdminSubmit:hover {
+    background-color: #000000;
+  }
